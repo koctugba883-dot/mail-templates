@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "last_updated": "2025-10-06",
+  "templates": [
+    {
+      "id": 1,
+      "name": "Garanti BBVA Hesap Bildirimi",
+      "category": "bank",
+      "from": "bildirim@garantibbva.com.tr",
+      "subject": "Hesap Güvenlik Bildirimi - {{date}}",
+      "message": "Sayın {{customer_name}},\n\nHesabınızda {{amount}} TL tutarında işlem gerçekleştirilmiştir.\n\nİşlem Detayları:\n- Tarih: {{transaction_date}}\n- Tutar: {{amount}} TL\n- İşlem Türü: {{transaction_type}}\n\nBu işlemi siz yapmadıysanız derhal 444 0 333 numaralı telefondan banka ile iletişime geçin.\n\nSaygılarımızla,\nGaranti BBVA Güvenlik Ekibi",
+      "variables": ["customer_name", "amount", "transaction_date", "transaction_type", "date"]
+    },
+    {
+      "id": 2,
+      "name": "Akbank Güvenlik Uyarısı",
+      "category": "security",
+      "from": "guvenlik@akbank.com",
+      "subject": "GÜVENLİK UYARISI - Hesap {{account_number}}",
+      "message": "Değerli Müşterimiz {{customer_name}},\n\nHesabınızda ({{account_number}}) şüpheli aktivite tespit edilmiştir.\n\nTespit Edilen Aktivite:\n- IP Adresi: {{suspicious_ip}}\n- Konum: {{location}}\n- Giriş Zamanı: {{detection_time}}\n\nGÜVENLİĞİNİZ İÇİN HESABıNıZ GEÇİCİ OLARAK KıSıTLANMıŞTıR.\n\nHesabınızı tekrar aktifleştirmek için 0850 222 88 88 numarasını arayın.\n\nAkbank Müşteri Hizmetleri",
+      "variables": ["customer_name", "account_number", "suspicious_ip", "location", "detection_time"]
+    },
+    {
+      "id": 3,
+      "name": "İş Bankası Para Transferi",
+      "category": "transaction",
+      "from": "bildirim@isbank.com.tr",
+      "subject": "Para Transfer Bildirimi - {{amount}} TL",
+      "message": "Sayın {{customer_name}},\n\n{{amount}} TL tutarında para transferi işleminiz başarıyla tamamlanmıştır.\n\nTransfer Bilgileri:\n- Alıcı: {{receiver_name}}\n- IBAN: {{receiver_iban}}\n- Açıklama: {{description}}\n- İşlem Zamanı: {{transfer_time}}\n\nKalan Bakiye: {{remaining_balance}} TL\n\nTürkiye İş Bankası A.Ş.",
+      "variables": ["customer_name", "amount", "receiver_name", "receiver_iban", "description", "transfer_time", "remaining_balance"]
+    },
+    {
+      "id": 4,
+      "name": "Yapı Kredi Kart Bildirimi",
+      "category": "credit_card",
+      "from": "bildirim@yapikredi.com.tr",
+      "subject": "Kredi Kartı İşlem Bildirimi",
+      "message": "Sayın {{customer_name}},\n\n{{card_number}} numaralı kredi kartınızla işlem gerçekleştirilmiştir.\n\nİşlem Bilgileri:\n- Tutar: {{amount}} TL\n- Merchant: {{merchant_name}}\n- Tarih: {{transaction_date}}\n- Şehir: {{city}}\n\nMevcut Borç: {{current_debt}} TL\nKullanılabilir Limit: {{available_limit}} TL\n\nBu işlemi siz yapmadıysanız 444 0 444 numarasını arayın.\n\nYapı ve Kredi Bankası A.Ş.",
+      "variables": ["customer_name", "card_number", "amount", "merchant_name", "transaction_date", "city", "current_debt", "available_limit"]
+    },
+    {
+      "id": 5,
+      "name": "BDDK Uyarı Bildirimi",
+      "category": "government",
+      "from": "bildirim@bddk.org.tr",
+      "subject": "ÖNEMLİ: Banka Hesap Güvenlik Bildirimi",
+      "message": "Sayın {{customer_name}},\n\nBankacılık Düzenleme ve Denetleme Kurumu olarak, hesabınızda güvenlik riski tespit edilmiştir.\n\nRisk Detayları:\n- Risk Seviyesi: {{risk_level}}\n- Tespit Tarihi: {{detection_date}}\n- Güvenlik Kodu: {{security_code}}\n\nACELE EDİN! Hesabınızı korumak için 48 saat içinde işlem yapın.\n\nBu işlem yapılmazsa hesabınız kalıcı olarak kapatılacaktır.\n\nT.C. Cumhurbaşkanlığı\nBankacılık Düzenleme ve Denetleme Kurumu",
+      "variables": ["customer_name", "risk_level", "detection_date", "security_code"]
+    }
+  ]
+}
