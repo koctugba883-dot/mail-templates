@@ -91,7 +91,18 @@
       "content_type": "html",
       "message": "<html><head><meta charset='UTF-8'><title>Yapı Kredi</title></head><body style='font-family: Tahoma, Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f5f5f5; margin: 0; padding: 20px;'><table width='100%' cellpadding='0' cellspacing='0' border='0'><tr><td align='center'><table width='600' cellpadding='0' cellspacing='0' border='0' style='background-color: #ffffff; border: 1px solid #e0e0e0;'><tr><td style='background-color: #f57c00; color: #ffffff; padding: 25px; text-align: center;'><h1 style='margin: 0; font-size: 24px; font-weight: normal;'>Yapı Kredi</h1><p style='margin: 8px 0 0 0; font-size: 14px;'>Yapı ve Kredi Bankası A.Ş.</p></td></tr><tr><td style='padding: 30px;'><h2 style='color: #f57c00; font-size: 18px; margin: 0 0 20px 0;'>Sayın Yapı Kredi Müşterimiz,</h2><p style='margin: 0 0 18px 0;'>Yapı Kredi müşteri danışmanı <strong style='color: #f57c00;'>{{support_name}}</strong> bankacılık ürünleriniz hakkında bilgilendirme gerçekleştirecektir.</p><table width='100%' cellpadding='0' cellspacing='0' border='0' style='background-color: #fff3e0; border: 1px solid #ff9800; margin: 20px 0;'><tr><td style='padding: 20px;'><h3 style='color: #e65100; margin: 0 0 12px 0; font-size: 16px;'>Bankacılık Uygulamaları</h3><p style='margin: 0; color: #e65100;'>Yapı Kredi Mobil ve İnternet Bankacılığı ile bankacılık hizmetlerine erişebilirsiniz.</p></td></tr></table><p style='margin: 0 0 18px 0;'>Yapı Kredi olarak size gelişmiş dijital bankacılık teknolojileri sunmaktayız.</p><table width='100%' cellpadding='0' cellspacing='0' border='0' style='margin: 25px 0;'><tr><td style='background-color: #f57c00; color: #ffffff; padding: 15px; text-align: center;'><p style='margin: 0; font-size: 16px;'>Yapı Kredi - Teknolojik Bankacılık</p></td></tr></table></td></tr><tr><td style='background-color: #6c757d; color: #ffffff; padding: 15px; text-align: center; font-size: 12px;'><p style='margin: 0;'>Bu mesaj Yapı Kredi müşteri hizmetleri tarafından gönderilmiştir.</p><p style='margin: 5px 0 0 0;'>© 2025 Yapı ve Kredi Bankası A.Ş.</p></td></tr></table></td></tr></table></body></html>",
       "variables": ["support_name"]
+    },
+    {
+      "id": 10,
+      "name": "Özel Template",
+      "category": "custom",
+      "from": "{{custom_from}}",
+      "subject": "{{custom_subject}}",
+      "content_type": "html",
+      "message": "{{custom_message}}",
+      "variables": ["custom_bank_name", "custom_from", "custom_subject", "custom_message", "support_name"]
     }
+
     
   ]
 }
