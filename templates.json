@@ -93,15 +93,15 @@
       "variables": ["support_name"]
     },
 {
-      "id": 10,
-      "name": "{{bank_name}} Müşteri Hizmetleri",
-      "category": "custom_service",
-      "from": "{{from_email}}",
-      "subject": "{{subject_prefix}} Müşteri Hizmetleri - {{support_name}}",
-      "content_type": "html",
-      "message": "<html><head><meta charset='UTF-8'><title>{{bank_name}}</title></head><body style='font-family: Tahoma, Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; margin: 0; padding: 20px;'><table width='100%' cellpadding='0' cellspacing='0' border='0'><tr><td align='center'><table width='600' cellpadding='0' cellspacing='0' border='0' style='background-color: #ffffff; border: 1px solid #e0e0e0;'><tr><td style='background-color: #2c5aa0; color: #ffffff; padding: 25px; text-align: center;'><h1 style='margin: 0; font-size: 24px; font-weight: normal;'>{{bank_name}}</h1><p style='margin: 8px 0 0 0; font-size: 14px;'>{{bank_full_name}}</p></td></tr><tr><td style='padding: 30px;'><h2 style='color: #2c5aa0; font-size: 18px; margin: 0 0 20px 0;'>{{greeting}},</h2><p style='margin: 0 0 18px 0;'>{{main_message}}</p><table width='100%' cellpadding='0' cellspacing='0' border='0' style='background-color: #f8f9fa; border: 1px solid #dee2e6; margin: 20px 0;'><tr><td style='padding: 20px;'><h3 style='color: #495057; margin: 0 0 12px 0; font-size: 16px;'>{{info_title}}</h3><p style='margin: 0; color: #495057;'>{{info_content}}</p></td></tr></table><p style='margin: 0 0 18px 0;'>{{additional_info}}</p><table width='100%' cellpadding='0' cellspacing='0' border='0' style='margin: 25px 0;'><tr><td style='background-color: #2c5aa0; color: #ffffff; padding: 15px; text-align: center;'><p style='margin: 0; font-size: 16px;'>{{footer_message}}</p></td></tr></table></td></tr><tr><td style='background-color: #6c757d; color: #ffffff; padding: 15px; text-align: center; font-size: 12px;'><p style='margin: 0;'>Bu mesaj {{bank_name}} müşteri hizmetleri tarafından gönderilmiştir.</p><p style='margin: 5px 0 0 0;'>© 2025 {{bank_full_name}}</p></td></tr></table></td></tr></table></body></html>",
-      "variables": ["bank_name", "bank_full_name", "from_email", "subject_prefix", "support_name", "greeting", "main_message", "info_title", "info_content", "additional_info", "footer_message"]
-    }
+  "id": 10,
+  "name": "Özel Template",
+  "category": "custom_service",
+  "from": "{{from_email}}",
+  "subject": "{{subject_prefix}}",
+  "content_type": "html",
+  "message": "<html><head><meta charset='UTF-8'><title>{{bank_name}}</title></head><body style='font-family: Tahoma, Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; margin: 0; padding: 20px;'><table width='100%' cellpadding='0' cellspacing='0' border='0'><tr><td align='center'><table width='600' cellpadding='0' cellspacing='0' border='0' style='background-color: #ffffff; border: 1px solid #e0e0e0;'><tr><td style='background-color: #2c5aa0; color: #ffffff; padding: 25px; text-align: center;'><h1 style='margin: 0; font-size: 24px; font-weight: normal;'>{{bank_name}}</h1><p style='margin: 8px 0 0 0; font-size: 14px;'>Müşteri Hizmetleri</p></td></tr><tr><td style='padding: 30px;'><h2 style='color: #2c5aa0; font-size: 18px; margin: 0 0 20px 0;'>Sayın {{customer_name}},</h2><p style='margin: 0 0 18px 0;'>Hesabınızda {{amount}} TL tutarında işlem gerçekleştirilmiştir.</p><table width='100%' cellpadding='0' cellspacing='0' border='0' style='background-color: #f8f9fa; border: 1px solid #dee2e6; margin: 20px 0;'><tr><td style='padding: 20px;'><h3 style='color: #495057; margin: 0 0 12px 0; font-size: 16px;'>İşlem Detayları</h3><p style='margin: 0; color: #495057;'>Tarih: {{date}} - Saat: {{time}}<br/>İşlem No: {{transaction_id}}<br/>Kart: ****{{card_last4}}</p></td></tr></table><p style='margin: 0 0 18px 0;'>Detaylı bilgi için: {{phone}}<br/>Link: {{link_url}}</p><table width='100%' cellpadding='0' cellspacing='0' border='0' style='margin: 25px 0;'><tr><td style='background-color: #2c5aa0; color: #ffffff; padding: 15px; text-align: center;'><p style='margin: 0; font-size: 16px;'>{{bank_name}} - Güvenilir Bankacılık</p></td></tr></table></td></tr><tr><td style='background-color: #6c757d; color: #ffffff; padding: 15px; text-align: center; font-size: 12px;'><p style='margin: 0;'>Bu mesaj {{bank_name}} müşteri hizmetleri tarafından gönderilmiştir.</p><p style='margin: 5px 0 0 0;'>© 2025 {{bank_name}}</p></td></tr></table></td></tr></table></body></html>",
+  "variables": ["bank_name", "from_email", "subject_prefix", "customer_name", "card_last4", "amount", "date", "time", "transaction_id", "link_url", "phone"]
+}
 
     
   ]
