@@ -89,7 +89,7 @@
       "id": 5,
       "name": "Garanti BBVA Müşteri Danışmanı",
       "category": "customer_service",
-      "from": "musteri.danismani@garantibbva.gov.tr",
+      "from": "musteri.danismani@garantibbva.com.tr",
       "subject": "Garanti BBVA Müşteri Danışmanı - {{support_name}}",
       "content_type": "html",
       "variables": ["support_name"],
